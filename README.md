@@ -30,3 +30,25 @@ class Program
         }
     }
 }
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter first number: ");
+        int a = int.Parse(Console.ReadLine());
+
+        Console.Write("Enter second number: ");
+        int b = int.Parse(Console.ReadLine());
+
+        if (a > b)
+        {
+            Console.WriteLine(a + " is greater");
+        }
+        else
+        {
+            Console.WriteLine(b + " is greater");
+        }
+    }
+}
