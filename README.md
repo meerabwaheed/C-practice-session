@@ -86,3 +86,40 @@ class Program
         Console.WriteLine("Factorial = " + fact);
     }
 }
+🧪 Practice Task
+Write a program that:
+
+Creates an array of 5 integers.
+
+Takes input from the user for each index.
+
+Prints all the elements.
+
+Prints only the even numbers from the array.
+
+    */
+    static void Main()
+    {
+        int[] numbers = new int[5];
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            Console.WriteLine("Enter a Number for index " + i + " :");
+            string enteredNumber = Console.ReadLine();
+            numbers[i] = Convert.ToInt32(enteredNumber);
+        }
+        // printing the arrays indexes
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            Console.WriteLine("index " + i + " : " + numbers[i]);
+        }
+        Console.WriteLine("\nEven numbers:");
+        foreach (int number in numbers)
+        {
+            if (number % 2 == 0)
+            {
+                Console.WriteLine("Even numbers " + number);
+            }
+        }
+    }
+
+}
