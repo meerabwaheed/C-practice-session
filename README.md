@@ -123,3 +123,52 @@ Prints only the even numbers from the array.
     }
 
 }
+using System;
+class Program
+{
+/_
+Create an array of 5 integers.
+Ask the user to enter 5 numbers (use a loop).
+Print all the entered numbers
+Find and print:
+The maximum number in the array.
+The minimum number in the array.
+_/
+static void Main()
+{
+int[] numbers = new int[5];
+int max = numbers[0];
+int min = numbers[0];
+for (int i = 0; i < numbers.Length; i++)
+{
+Console.WriteLine("Enter the number for index " + i);
+string enteredNumber = Console.ReadLine();
+numbers[i] = Convert.ToInt32(enteredNumber);
+// Console.WriteLine(enteredNumber);
+
+    	}
+    	// printing all the indexes taken from the user
+    	for (int i = 0; i < numbers.Length; i++)
+    	{
+    		Console.WriteLine("The number entered by user at index " + i + " is :" + numbers[i]);
+    	}
+
+    	for (int i = 0; i < numbers.Length; i++)
+    	{
+    		if (numbers[i] > max)
+    		{
+    			max = numbers[i];
+    		}
+    		if (numbers[i] < min)
+    		{
+    			max = numbers[i];
+    		}
+    	}
+
+    	Console.WriteLine("max: " + max);
+    	Console.WriteLine("min: " + min);
+
+    }
+
+}
+
