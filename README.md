@@ -182,4 +182,20 @@ Count:
 How many are positive (> 0)
 How many are negative (< 0)
 How many are zero (== 0)
-Print the counts.
+Print the counts.//Take two numbers and print their sum.
+using System;
+class Program {
+    static void Main(string[] args)
+    {
+        Console.Write("Enter First number:");
+        int num1 = int.Parse(Console.ReadLine());
+
+        Console.Write("Enter Second number:");
+        int num2 = int.Parse(Console.ReadLine());
+
+        int sum = num1 + num2;
+
+        Console.WriteLine("sum" + sum);
+    }
+}
+
