@@ -198,4 +198,25 @@ class Program {
         Console.WriteLine("sum" + sum);
     }
 }
+//2.Check if User is Eligible for Voting
+
+using System;
+class Program {
+    static void Main(string[] args)
+    {
+        Console.Write("Enter your age:");
+        int age = int.Parse(Console.ReadLine());
+
+        if(age >= 18)
+        {
+            Console.WriteLine("you are Elligible for vote");
+        }
+        else
+        {
+            Console.WriteLine("Your are not Elligible for vote");
+
+        }
+    }
+}
+
 
