@@ -218,5 +218,16 @@ class Program {
         }
     }
 }
-
+//Print numbers from 1 to 100 using a loop.
+using System;
+class Program
+{
+    static void Main(string[] args)
+    {
+        for(int i = 1; i <= 100; i++)
+        {
+            Console.WriteLine(i);
+        }
+    }
+}
 
