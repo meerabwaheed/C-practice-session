@@ -231,3 +231,24 @@ class Program
     }
 }
 
+//Store 5 marks in an array and print them.
+using System;
+class Program {
+    static void Main(string[] args)
+    {
+        int[] marks = new int[5] ;
+        Console.WriteLine("Enter 5 marks");
+
+        for(int i = 1; i<= marks.Length; i++)
+        {
+            marks[i] = int.Parse(Console.ReadLine());
+        }
+        Console.WriteLine("Marks are:");
+
+        for (int i = 0; i < 5; i++)
+        {
+            Console.WriteLine(marks[i]);
+        }
+    }
+
+}
