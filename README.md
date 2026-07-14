@@ -171,4 +171,15 @@ numbers[i] = Convert.ToInt32(enteredNumber);
     }
 
 }
-
+using System;
+class Program
+{
+/_
+🔧 Instructions:
+Create an array of 7 integers.
+Take 7 numbers as input from the user.
+Count:
+How many are positive (> 0)
+How many are negative (< 0)
+How many are zero (== 0)
+Print the counts.
