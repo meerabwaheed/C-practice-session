@@ -243,3 +243,19 @@ class Program {
     }
 
 }
+using System;
+
+class Program
+{
+    static void Greeting()
+    {
+        Console.WriteLine("Hello");
+        Console.WriteLine("Welcome");
+    }
+
+    static void Main()
+    {
+        Greeting();
+        Greeting();
+    }
+}
