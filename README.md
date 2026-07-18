@@ -259,3 +259,17 @@ class Program
         Greeting();
     }
 }
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] marks = { 70, 80, 90, 75, 88 };
+
+        foreach (int mark in marks)
+        {
+            Console.WriteLine(mark);
+        }
+    }
+}
