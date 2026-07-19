@@ -315,3 +315,22 @@ class Program
         }
     }
 }
+using System;
+class Program
+{
+static void Main()
+{
+// data types
+// int age = 10;
+// string personName = "Ikram ";
+// double salary = 35.5;
+// string profession = "developer";
+// bool isJobian = true;
+// Console.WriteLine(personName + " is a " + age + " years old " + profession + " and his salary is " + salary + " and currently a " + isJobian);
+
+        // int a = 10;
+        // int b = 20;
+        // bool a = true;
+        // bool b = false;
+Creating an Azure SQL Database
+Creating an Azure SQL Database involves several steps, all of which can be done through the Azure Portal. Below is a detailed guide to help you set up your SQL database.
