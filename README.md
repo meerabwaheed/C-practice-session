@@ -363,3 +363,104 @@ class Program
         }
     }
 }
+using System;
+class Program
+{
+static void Main()
+{
+// int age = 19;
+// if (age > 18)
+// {
+// Console.WriteLine("Your are good to drive Sonata");
+// }
+// else if (age <= 10)
+// {
+
+        //     }
+        //     else
+        //     {
+        //         Console.WriteLine("Your are in else block");
+        //     }
+        int day = 6;
+        switch (day)
+        {
+            case 1:
+                Console.WriteLine("Monday");
+                break;
+            case 2:
+                Console.WriteLine("Tuesday");
+                break;
+            case 3:
+                Console.WriteLine("Wednesday");
+                break;
+            case 4:
+                Console.WriteLine("Tuesday");
+                break;
+            case 5:
+                Console.WriteLine("Friday");
+                break;
+            case 6:
+                Console.WriteLine("Saturday");
+                break;
+            case 7:
+                Console.WriteLine("Sunday");
+                break;
+            default:
+                Console.WriteLine("Infinte day");
+                break;
+        }
+
+
+    }
+
+}
+
+// loops
+// for (int i = 0; i < 10; i++)
+// {
+// Console.WriteLine(i);
+
+        // }
+
+using System;
+class Program
+{
+/\*
+
+🧪 Practice Task
+Write a program that:
+
+Creates an array of 5 integers.
+
+Takes input from the user for each index.
+
+Prints all the elements.
+
+Prints only the even numbers from the array.
+
+    */
+    static void Main()
+    {
+        int[] numbers = new int[5];
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            Console.WriteLine("Enter a Number for index " + i + " :");
+            string enteredNumber = Console.ReadLine();
+            numbers[i] = Convert.ToInt32(enteredNumber);
+        }
+        // printing the arrays indexes
+        for (int i = 0; i < numbers.Length; i++)
+        {
+            Console.WriteLine("index " + i + " : " + numbers[i]);
+        }
+        Console.WriteLine("\nEven numbers:");
+        foreach (int number in numbers)
+        {
+            if (number % 2 == 0)
+            {
+                Console.WriteLine("Even numbers " + number);
+            }
+        }
+    }
+
+}
