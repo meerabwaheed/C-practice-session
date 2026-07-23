@@ -464,3 +464,35 @@ Prints only the even numbers from the array.
     }
 
 }
+public class PagedResult<T>
+{
+    public List<T> Items { get; set; }
+    public int TotalCount { get; set; }
+    public int PageNumber { get; set; }
+    public int PageSize { get; set; }
+    public int TotalPages => (int)Math.Ceiling(TotalCount / (double)PageSize);
+}
+
+public static class QueryableExtensions
+{
+    public static PagedResult<T> ToPagedResult<T>(
+        this IQueryable<T> query, int pageNumber, int pageSize)
+    {
+        var totalCount = query.Count();
+        var items = query
+            .Skip((pageNumber - 1) * pageSize)
+            .Take(pageSize)
+            .ToList();
+
+        return new PagedResult<T>
+        {
+            Items = items,
+            TotalCount = totalCount,
+            PageNumber = pageNumber,
+            PageSize = pageSize
+        };
+    }
+}
+
+// Usage:
+// var result = dbContext.Repairs.Where(r => r.StoreId == storeId).ToPagedResult(page, 20);
