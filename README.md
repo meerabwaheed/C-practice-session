@@ -496,3 +496,10 @@ public static class QueryableExtensions
 
 // Usage:
 // var result = dbContext.Repairs.Where(r => r.StoreId == storeId).ToPagedResult(page, 20);
+namespace social_media_app.Models;
+
+public class User { public int Id { get; set; } public string Name { get; set; } = ""; public string Handle { get; set; } = ""; public string Bio { get; set; } = ""; public string AvatarColor { get; set; } = "#d9b46f"; public DateTime JoinedAt { get; set; } = DateTime.UtcNow; public ICollection<Follow> Followers { get; set; } = []; public ICollection<Follow> Following { get; set; } = []; }
+public class Post { public int Id { get; set; } public int AuthorId { get; set; } public User Author { get; set; } = null!; public string Content { get; set; } = ""; public DateTime CreatedAt { get; set; } = DateTime.UtcNow; public ICollection<Comment> Comments { get; set; } = []; public ICollection<Like> Likes { get; set; } = []; }
+public class Comment { public int Id { get; set; } public int PostId { get; set; } public int AuthorId { get; set; } public User Author { get; set; } = null!; public string Content { get; set; } = ""; public DateTime CreatedAt { get; set; } = DateTime.UtcNow; }
+public class Like { public int UserId { get; set; } public int PostId { get; set; } }
+public class Follow { public int FollowerId { get; set; } public User Follower { get; set; } = null!; public int FollowingId { get; set; } public User Following { get; set; } = null!; }
