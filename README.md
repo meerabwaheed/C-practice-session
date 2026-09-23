@@ -80,7 +80,7 @@ class Program
 🧪 Practice Task
 Write a program that:
 
-Creates an array of 5 integers.
+Creates an array of 6 integers.
 
 Takes input from the user for each index.
 
