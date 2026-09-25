@@ -3,7 +3,7 @@ using System;
 
 
 using System;
-//here is the even & odd number practice
+//here is the Even & Odd number practice
 class Program
 {
     static void Main()
